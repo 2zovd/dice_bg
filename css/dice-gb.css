@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "BebasNeueRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BebasNeueBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/BebasNeueBold/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueBold/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold/BebasNeueBold.ttf") format("truetype"); }
+
+.dice-gb-wrap {
+  width: 100%;
+  height: 100%;
+  background: url("../img/dice-bg.png"); }
+
+.dice-gb {
+  max-width: 1157px;
+  margin: 0 auto; }
+
+.dice-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 22px; }
+
+.dice-logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "BebasNeueRegular"; }
+  .dice-logo img {
+    float: left; }
+  .dice-logo span {
+    float: left;
+    font-family: "BebasNeueBold";
+    font-weight: bold; }

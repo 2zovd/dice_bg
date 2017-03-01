@@ -1,0 +1,510 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
+
+        <!--[if gte IE 9]> <style type="text/css"> .gradient { filter: none; } </style> <![endif]-->       
+
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/dice-gb.css">
+    </head>
+    <body>
+        <div id="need-flash">
+            <div class="container">
+                <p class="text">Для отображения видео требуется установить Flash Player</p>
+                <a class="btn" href="http://www.adobe.com/go/getflashplayer">Скачать</a>
+                <a class="link" href="#" id="neverShowFlash">Не показывать</a>
+            </div>
+            <button class="close"></button>
+        </div>
+        <header class="main-header">
+            <div class="user-area">
+                <div class="logo">
+                    <h1>
+                        <a href="/">
+                            <img alt="Онлайн казино GreenBet" src="/img/main/greenbet_logo.png">
+                        </a>
+                    </h1>
+                </div>
+                <div class="user-block">
+                    <!-- noauth -->
+
+                    <div class="unregistered">
+                        <form action="/login" id="_auth_form" method="POST" onsubmit="mserver();">
+                            <div class="user_token">
+                                <input type="hidden" value="">
+                            </div>
+                            <div class="input-log">
+                                <input id="login" name="login" placeholder="Логин" tabindex="1" type="text">
+                                <a class="keyboard" href="javascript:void(0)"></a>
+                                <div class="virt-keyboard" id="login_numpad" style="display: none;">
+                                    <div class="virt-btn" value="1">
+                                        <a href="javascript:void(0)">1</a>
+                                    </div>
+                                    <div class="virt-btn" value="2">
+                                        <a href="javascript:void(0)">2</a>
+                                    </div>
+                                    <div class="virt-btn" value="3">
+                                        <a href="javascript:void(0)">3</a>
+                                    </div>
+                                    <div class="virt-btn" value="4">
+                                        <a href="javascript:void(0)">4</a>
+                                    </div>
+                                    <div class="virt-btn" value="5">
+                                        <a href="javascript:void(0)">5</a>
+                                    </div>
+                                    <div class="virt-btn" value="6">
+                                        <a href="javascript:void(0)">6</a>
+                                    </div>
+                                    <div class="virt-btn" value="7">
+                                        <a href="javascript:void(0)">7</a>
+                                    </div>
+                                    <div class="virt-btn" value="8">
+                                        <a href="javascript:void(0)">8</a>
+                                    </div>
+                                    <div class="virt-btn" value="9">
+                                        <a href="javascript:void(0)">9</a>
+                                    </div>
+                                    <div class="virt-btn" value="C">
+                                        <a href="javascript:void(0)">c</a>
+                                    </div>
+                                    <div class="virt-btn" value="0">
+                                        <a href="javascript:void(0)">0</a>
+                                    </div>
+                                    <div
+                                        class="virt-btn"
+                                        javascript:void(0)"="javascript:void(0)""
+                                        value="<"><a href=">&lt;</a>
+                                </div>
+                                <div class="clear" value="C"></div>
+                            </div>
+                        </div>
+                        <div class="input-pas">
+                            <input
+                                id="pass"
+                                name="password"
+                                placeholder="Пароль"
+                                tabindex="2"
+                                type="password">
+                            <a class="keyboard" href="javascript:void(0)"></a>
+                            <div class="virt-keyboard" id="pass_numpad" style="display: none;">
+                                <div class="virt-btn" value="1">
+                                    <a href="javascript:void()">1</a>
+                                </div>
+                                <div class="virt-btn" value="2">
+                                    <a href="#">2</a>
+                                </div>
+                                <div class="virt-btn" value="3">
+                                    <a href="#">3</a>
+                                </div>
+                                <div class="virt-btn" value="4">
+                                    <a href="#">4</a>
+                                </div>
+                                <div class="virt-btn" value="5">
+                                    <a href="#">5</a>
+                                </div>
+                                <div class="virt-btn" value="6">
+                                    <a href="#">6</a>
+                                </div>
+                                <div class="virt-btn" value="7">
+                                    <a href="#">7</a>
+                                </div>
+                                <div class="virt-btn" value="8">
+                                    <a href="#">8</a>
+                                </div>
+                                <div class="virt-btn" value="9">
+                                    <a href="#">9</a>
+                                </div>
+                                <div class="virt-btn" value="C">
+                                    <a href="#">c</a>
+                                </div>
+                                <div class="virt-btn" value="0">
+                                    <a href="#">0</a>
+                                </div>
+                                <div #"="#"" class="virt-btn" value="<"><a href=">&lt;</a>
+                            </div>
+                            <div class="clear" value="C"></div>
+                        </div>
+                    </div>
+                    <input id="office_id" name="office_id" type="hidden">
+                    <div class="button yellow">
+                        <div class="btn-inner">
+                            <input onclick="loginClick();" tabindex="3" type="submit" value="Войти">
+                        </div>
+                    </div>
+                    <input name="_auth_from_vidget" type="hidden" value="1">
+
+                    <a class="forgot" href="/login/forget">Забыли пароль?</a>
+                    <p></p>
+
+                </form>
+            </div>
+
+            <!-- /noauth -->
+            <!-- /auth -->
+            <div class="lang">
+                <img src="/img/lang/ru.png">
+                <span></span>
+                <ul class="lang-dropdown">
+                    <li>
+                        <a href="/test1/dogs">
+                            <img alt="" src="/img/lang/ru.png"></a>
+                    </li>
+                    <li>
+                        <a href="/en/test1/dogs">
+                            <img alt="" src="/img/lang/en.png"></a>
+                    </li>
+                    <li>
+                        <a href="/pt/test1/dogs">
+                            <img alt="" src="/img/lang/pt.png"></a>
+                    </li>
+                    <li>
+                        <a href="/es/test1/dogs">
+                            <img alt="" src="/img/lang/es.png"></a>
+                    </li>
+                    <li>
+                        <a href="/zh/test1/dogs">
+                            <img alt="" src="/img/lang/zh.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-feedback" style="visibility: hidden;">
+                <h3>Книга жалоб и Предложений</h3>
+                <form onsubmit="return false;">
+                    <input id="feedback-name" placeholder="* Укажите Ваше Имя" type="text">
+                    <input
+                        id="feedback-contacts"
+                        placeholder="* Номер телефона или E-mail"
+                        type="text">
+                    <textarea id="feedback-message" placeholder="* Текст сообщения"></textarea>
+                    <div class="text">Обращение в
+                        <b>“Книгу Жалоб”</b>
+                        рассматривается до 3х рабочих дней<br>* Обязательные поля для заполнения</div>
+                    <div class="button-block">
+                        <button class="submit" id="feedback_send">Отправить</button>
+                        <button class="cencel" id="feedback_cancel">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="user-nav-trigger">
+            <span aria-hidden="true"></span>
+        </button>
+        <div class="clear"></div>
+    </div>
+    <nav>
+        <button class="menu-nav-trigger">
+            <span aria-hidden="true"></span>
+        </button>
+        <div class="modal-mask"></div>
+        <ul class="main-nav" id="main-nav">
+            <li class="race  active ">
+                <a href="/cockroach">
+                    <span class="main-nav-icon"></span>
+                    Бега
+                </a>
+                <ul class="main-nav-dropdown">
+
+                    <li class="">
+                        <a href="/cockroach">
+                            <span class="cockroach"></span>
+                            Тараканы
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="/mouse">
+                            <span class="mouse"></span>
+                            Мыши
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="/mouselong">
+                            <span class="mouselong"></span>
+                            Мыши Long
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="live ">
+                <a href="/bgfortune">
+                    <span class="main-nav-icon"></span>
+                    Live ставки
+                </a>
+                <ul class="main-nav-dropdown">
+                    <li class="">
+                        <a href="/bgfortune">
+                            <span class="bgfortune"></span>
+                            Fortune BG
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/bgdice">
+                            <span class="bgdice"></span>
+                            Dice BG
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/bglucky5">
+                            <span class="bglucky5"></span>
+                            Lucky5 BG
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/bglucky7">
+                            <span class="bglucky7"></span>
+                            Lucky7 BG
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="keno ">
+                <a href="/kenospot">
+                    <span class="main-nav-icon"></span>
+                    Кено
+                </a>
+                <ul class="main-nav-dropdown">
+                    <li class="">
+                        <a href="/kenospot">
+                            <span class="kenospot"></span>
+                            Keno S
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="goal">
+                <a href="/goal">
+                    <span class="main-nav-icon"></span>
+                    Пенальти S
+                </a>
+            </li>
+        </ul>
+        <div class="settings-block">
+            <div class="time-settings">
+                <div class="time">
+                    <span id="watch">--:--</span>
+                    <!--<span class="set-icon"></span>-->
+                </div>
+                <!-- <div class="time-timezone">+03:00</div> -->
+                <div class="time-date" id="watch-date">--</div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="clear"></div>
+<main class="main">
+    <aside>
+        <div class="aside-label">
+            <span></span>
+        </div>
+        <div class="coupon">
+            <header class="heading">
+                <span class="heading-carret"></span>
+                <h2>Купон</h2>
+            </header>
+            <div class="content">
+                <ul class="coupon-type">
+                    <li class="bettype selected" id="ordinar">
+                        <a href="javascript:void(0)">
+                            <span class="icon"></span>
+                            Ординар
+                            <!--<span class="descr-icon">?</span>-->
+                        </a>
+                    </li>
+                    <li class="bettype" id="express">
+                        <a href="javascript:void(0)">
+                            <span class="icon"></span>
+                            Экспресс
+                            <!--<span class="descr-icon">?</span>-->
+                        </a>
+                    </li>
+                    <li class="bettype" id="system">
+                        <a href="javascript:void(0)">
+                            <span class="icon"></span>
+                            Система
+                            <!--<span class="descr-icon">?</span>-->
+                        </a>
+                    </li>
+                </ul>
+                <div class="coupon-content-inner">
+                    <div class="system-type" id="systemtypediv" style="display: none;">
+                        <!--<span>Тип системы:</span>-->
+                        <select id="systemtype" name="systemtype" onchange="basket.calcwin();"></select>
+                    </div>
+                    <div class="bet-message-wrap" id="user-rate"></div>
+                    <form action="/basket/make" class="coupon-form" id="rate-form" method="post">
+                        <input id="bettype" name="type" type="hidden" value="ordinar">
+                        <div class="bet-sum">
+                            <p>Сумма одной ставки:</p>
+                            <input
+                                id="basketamount"
+                                name="rate"
+                                placeholder="100.00"
+                                type="text"
+                                value="100">
+                            <a class="keyboard" href="javascript:void(0)" id="LabelPriceInput"></a>
+                            <div class="virt-keyboard" id="bet_numpad" style="display: none;">
+                                <div class="virt-btn" value="1">
+                                    <a href="javascript:void()">1</a>
+                                </div>
+                                <div class="virt-btn" value="2">
+                                    <a href="javascript:void()">2</a>
+                                </div>
+                                <div class="virt-btn" value="3">
+                                    <a href="javascript:void()">3</a>
+                                </div>
+                                <div class="virt-btn" value="4">
+                                    <a href="javascript:void()">4</a>
+                                </div>
+                                <div class="virt-btn" value="5">
+                                    <a href="javascript:void()">5</a>
+                                </div>
+                                <div class="virt-btn" value="6">
+                                    <a href="javascript:void()">6</a>
+                                </div>
+                                <div class="virt-btn" value="7">
+                                    <a href="javascript:void()">7</a>
+                                </div>
+                                <div class="virt-btn" value="8">
+                                    <a href="javascript:void()">8</a>
+                                </div>
+                                <div class="virt-btn" value="9">
+                                    <a href="javascript:void()">9</a>
+                                </div>
+                                <div class="virt-btn" value="C">
+                                    <a href="javascript:void()">c</a>
+                                </div>
+                                <div class="virt-btn" value="0">
+                                    <a href="javascript:void()">0</a>
+                                </div>
+                                <div
+                                    class="virt-btn"<a href="">&lt;</a>
+                            </div>
+                            <div class="clear" value="C"></div>
+                        </div>
+                    </div>
+                    <div class="bet-num">
+                        <p id="LabelTicketCount">Количество исходов</p>
+                        <input id="TicketCount" placeholder="0" type="text">
+                    </div>
+                    <ul class="bet-const">
+                        <li>
+                            <a href="javascript:void(0)" onclick="betConst(this, 50)">50</a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:void(0)" onclick="betConst(this, 100)">100</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="betConst(this, 500)">500</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="betConst(this, 1000)">1000</a>
+                        </li>
+                    </ul>
+                    <ul class="coef-block">
+                        <li class="bet_price_quantity" style="display: none;">
+                            <span id="TicketQuintity">0</span>
+                            <p id="LabelTicketQuintity">Количество ставок</p>
+                        </li>
+                        <li>
+                            <span id="TicketFullPrice">0</span>
+                            <p id="LabelTicketFullPrice">Общая сумма ставки</p>
+                        </li>
+                        <li>
+                            <span id="TicketWinPrize">0</span>
+                            <p id="LabelTicketWinPrize">Возможный выигрыш</p>
+                        </li>
+                    </ul>
+                    <span class="login-message">Войдите, чтобы сделать ставку.</span>
+                    <div class="reset-block">
+                        <a class="clear_button" href="#" id="clearbasket">Очистить купон</a>
+                        <img alt="GreenBet сделать ставку онлайн" src="/img/v4/logo-mini.png">
+                    </div>
+                </form>
+            </div>
+            <div class="event-block goal" hidden="">
+                <h3>Пенальти</h3>
+                <div class="timer">Удар череp:
+                    <span>00:62</span>
+                </div>
+                <div class="progressbar">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<article class="main-content dogs">
+    <header class="heading">
+        <span class="heading-carret top"></span>
+        <h2>Трансляция</h2>
+    </header>
+    <div class="content">
+        <section class="section-top">
+        	<div id="bet" class="dice-gb-wrap">
+                <div class="dice-gb">
+                   <div class="dice-header">
+                       <a href="#" class="dice-logo">
+                        <img src="img/dice-logo.png" alt="DICE GB">
+                        <span>Dice <strong>Bg</strong></span>
+                       </a>
+                   </div>                    
+                </div>
+
+            </div>
+            <div id="video">
+                <div class="video_inner" id="videorunner">
+                    
+                </div>
+            </div>
+            <div id="result">
+                
+            </div>
+        </section>
+    </div>
+</article>
+<div class="clear"></div>
+</main>
+<div class="modal-pages" id="modal-browsers">
+<div class="browsers-wrap">
+    <div class="browsers-close"><img src="/s/img/close_2.png"></div>
+    <div class="browsers">
+        <div class="browsers-text-block">
+            <h3>
+                <span>Внимание!</span>
+                Ваш Браузер Устарел.</h3>
+            <p>Вы пользуетесь устаревшим браузером, который не поддерживает современные
+                стандарты.</p>
+            <div class="new-browser">
+                <p>Пожалуйста, скачайте новую версию браузера:</p>
+            </div>
+        </div>
+        <div class="browsers-icon-wrap">
+            <div class="browsers-icon-block">
+                <a href="https://www.google.ru/chrome/">
+                    <div class="browserc-icon chrome"></div>
+                    <h3>Chrome</h3>
+                </a>
+            </div>
+            <div class="browsers-icon-block">
+                <a href="https://www.mozilla.org/ru/firefox/">
+                    <div class="browserc-icon firefox"></div>
+                    <h3>Firefox</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
