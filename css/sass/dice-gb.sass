@@ -9,15 +9,15 @@
 		clear: both
 
 .content
-	width: 100%
-	background: url('../img/dice-bg.png')
+
 
 .dice-gb
-	max-width: 1157px
+	width: 100%
+	max-width: 1920px
 	margin: 0 auto
-	margin: 0 23px
+	background: url('../img/dice-bg.png')
 
-
+	padding: 0 23px
 
 .dice-header
 	padding: 22px 0
@@ -151,9 +151,9 @@
 		height: auto
 
 .dice-center
-	width: 29.7%
+	width: 29.6%
 	float: left
-	margin-right: 0.6%
+	margin-right: 0.7%
 
 .dice-table-header
 	text-align: center
@@ -185,6 +185,27 @@
 	width: 100%
 	overflow: hidden
 	margin-bottom: 19px
+	td
+		padding: 0px 7px 0px 10px
+		background-color: #cccbcc
+		border: 2px solid #fabf35
+		cursor: pointer
+		overflow: hidden
+		span
+			display: table-cell
+			color: #000
+			vertical-align: middle
+		.bet-value
+			font-family: "Helvetica"
+			font-size: 14px
+			line-height: 16px
+			margin-top: 2px
+			width: 95%
+			padding-right: 5%
+		.bet-odd
+			font-family: "HelveticaBold"
+			font-size: 18px
+			line-height: 20px
 	tr:first-child
 			td:first-child
 				border-radius: 10px 0 0 0
@@ -195,36 +216,15 @@
 				border-radius: 0 0 0 10px
 			td:last-child
 				border-radius: 0 0 10px 0
-	td
-		padding: 0px 7px 0px 10px
-		height: 32px
-		background-color: #cccbcc
-		border: 2px solid #fabf35
-		cursor: pointer
-		span
-			display: block
-			color: #000
-		.bet-value
-			float: left
-			font-family: "Helvetica"
-			font-size: 14px
-			line-height: 16px
-			margin-top: 2px;
-		.bet-odd
-			float: right
-			font-family: "HelveticaBold"
-			font-size: 18px
-			line-height: 20px
 
 .odd-even
 	tr
 		td
 			padding: 0px 7px 0px 10px
-			height: 32px
 			.bet-value
 				font-size: 12px
 				line-height: 14px
-				max-width: 85%
+				max-width: 100%
 	tr:first-child
 			td:first-child
 				border-radius: 10px 10px 0 0
