@@ -33,12 +33,13 @@
   display: block;
   clear: both; }
 
-.dice-gb {
+.dice-wrap {
   width: 100%;
-  max-width: 1920px;
+  background: url("../img/dice-bg.png"); }
+
+.dice-gb {
   margin: 0 auto;
-  background: url("../img/dice-bg.png");
-  padding: 0 23px; }
+  padding: 0 1.3%; }
 
 .dice-header {
   padding: 22px 0;
@@ -133,6 +134,9 @@
   float: left;
   text-align: center;
   margin-right: 1.9%; }
+  .dice-left > img {
+    width: 100%;
+    height: auto; }
 
 .dice-video {
   width: 100%;
@@ -213,22 +217,27 @@
     background-color: #cccbcc;
     border: 2px solid #fabf35;
     cursor: pointer;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .dice-table td.active-bet {
+      background: #fabf35; }
     .dice-table td span {
       display: table-cell;
       color: #000;
       vertical-align: middle; }
     .dice-table td .bet-value {
+      width: 100%;
       font-family: "Helvetica";
       font-size: 14px;
       line-height: 16px;
       margin-top: 2px;
-      width: 95%;
       padding-right: 5%; }
     .dice-table td .bet-odd {
       font-family: "HelveticaBold";
       font-size: 18px;
-      line-height: 20px; }
+      line-height: 24px; }
   .dice-table tr:first-child td:first-child {
     border-radius: 10px 0 0 0; }
   .dice-table tr:first-child td:last-child {
@@ -242,8 +251,7 @@
   padding: 0px 7px 0px 10px; }
   .odd-even tr td .bet-value {
     font-size: 12px;
-    line-height: 14px;
-    max-width: 100%; }
+    line-height: 14px; }
 
 .odd-even tr:first-child td:first-child {
   border-radius: 10px 10px 0 0; }
